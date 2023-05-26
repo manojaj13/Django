@@ -1,0 +1,45 @@
+{% include 'header.html' %}
+<div id="A">
+    <br>
+<h1>Setting Up a Django Project</h1>
+    <br>
+<h2>Step 1: Set up a Python environment</h2>
+<p>Make sure Python is installed on your system. You can download and install Python from the <a href="https://www.python.org">official Python website</a>.</p>
+<br><br>
+<h2>Step 2: Install Django</h2>
+<br>
+<p>Open a command prompt or terminal and use the following command to install Django using pip, the Python package manager:</p>
+<pre><code>pip install Django</code></pre>
+<br><br>
+<h2>Step 3: Create a new Django project</h2>
+<br>
+<p>Once Django is installed, navigate to the directory where you want to create your project and run the following command:</p>
+<pre><code>django-admin startproject projectname</code></pre>
+<p>Replace "projectname" with the desired name for your project. This command will create a new directory with the project structure and files.</p>
+<br><br>
+<h2>Step 4: Navigate into the project directory</h2>
+<br>
+<p>Use the <code>cd</code> command to change into the project directory that was just created:</p>
+<pre><code>cd projectname</code></pre>
+<br><br>
+<h2>Step 5: Run the development server</h2>
+<br>
+<p>To test your newly created project, run the following command:</p>
+<pre><code>python manage.py runserver</code></pre>
+<p>This will start the development server, and you'll see output similar to:</p>
+<pre><code>Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.</code></pre>
+<br><br>
+<h2>Step 6: Access the project in a web browser</h2>
+<br>
+<p>Open your preferred web browser and visit <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>.
+     You should see the Django "Congratulations!" page, indicating that your project is running successfully.</p>
+     <br><br><br>
+    </div>
+    
+     {% include 'footer.html' %}
+<style>
+    #A{
+        background: linear-gradient(to right, #6bacca, #9b3c3c);
+    }
+</style>

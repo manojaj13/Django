@@ -1,0 +1,44 @@
+{% include 'header.html' %}
+<di id="B">
+<br><br>
+<h1>WELCOME TO TEACHER PAGE</h1>
+<br>
+<form method="POST" action='create'>
+    {% csrf_token %}
+    <table>
+        <tr>
+        <td>ENTER THE QUATION:</td>
+        <td><textarea name="cname" rows="10" cols="150" id="A"></textarea></td>
+        </tr>
+
+                
+            <tr>
+                    <td><input type="submit" name="same" value="SUBMIT"></td>
+                </tr>
+    </table>
+    
+</form>
+<br>
+<br>
+{% block data %}
+<table>
+    <tr>
+    <th>ANSWER</th>
+</tr>
+{% for d in data %}
+<tr>
+    <td>{{d.name}}</td>
+</tr>
+{% endfor %}
+</table>
+</di>
+{% endblock data %}
+<style>
+#B{
+    background: lightgray;
+    }
+#A{
+    background-color:white;
+
+}
+</style>
